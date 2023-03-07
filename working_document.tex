@@ -4,8 +4,8 @@
 \usepackage{lipsum}
 
 % \usepackage{float}
-% \usepackage[]{graphicx}
-% \graphicspath{{Images/}}
+\usepackage[]{graphicx}
+\graphicspath{{Images/}}
 \usepackage{hyperref}
 % \usepackage{subfiles}
 
@@ -36,9 +36,13 @@ This is a drafting document created for the purpose of writing any ideas down.
 This document is only a draft; therefore, it is rough and messy.
 However, the full report should evolve out of this document.
 
-\section{Research Questions}
-Here are the research questions:
 
+\section{Introduction}
+
+\subsection{Purpose of this}
+This project seeks to lay a ground build by systematic literature review for the layman and the practitioner to understand the free and open source hardware (FOSH).
+It assumes no knowledge of the free and open source movement, nor hardware.
+Through explaining all of this and more from the available literature, the project seeks to answer the following \textbf{Research Questions}:
 RQ1: What is the state-of-the art FOSH and what are the performance of this best FOSH? How does it compare in terms of performance and other aspects with the non-FOSH state-of-the-art? 
 
 RQ2: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
@@ -49,19 +53,53 @@ RQ4: To what extent is FOSS more adapted FOSH development, and what are the fact
 
 RQ5: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
 
-\section{Introduction}
-We need an introduction to what free and open source is. 
-A history of this in the software realm and how this idea is extending to hardware is needed. 
+\subsection{Where is the Freedom?}
+We have on our hands a revolution of technology. 
+And it is not the endless march of \textit{forward} preached by exploitive companies.
+This revolution is about \textbf{our} freedom to use technology for our learning, fun, and betterment.
+We use technology; technology does not use us. 
+Freedom and liberty over our technology is the extension of our freedom and liberty over our personhood.
+This revolution is championed by the Richard Stallman, computer scientist, philosopher, preacher, saint, and the founder of GNU and the Free and Open Source Software organisation \cite{b0_stallman}.
+As the \textit{popular} song goes \textit{Remember Richard Stallman,
+Who set your software free} \cite{song_GNUs_Not_Unix}.
 
-We need to understand what are the values and principles of free and open source, and how they exactly relate to free and open source hardware (FOSH).
-To this end we should consult the founder of it all Richard Stallman (RMS).
-This should be a good source to read into
-\textbf{Free Software, Free Society: Selected Essays of Richard M. Stallman}
-\cite{b0_stallman}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{the_wise_gnu.jpg}
+    \caption{Richard Matthew Stallman as depicted in lore}
+    \label{fig:rms}
+\end{figure}
 
-TODO write the summary of this section for the introduction citing Stallman.
+The passion and revolution of this movement, for users to take back ownership of their technology, is incredibly powerful. 
+No literature on the topic of open source anything can distance itself with this revolutionary zeal. 
+While it has not been fully actualised, it has permeated many aspects of our lives over the years.
+We have the rise of platforms such as GitHub and the widespread adoption of the Public Licenses preached by the Free and Open Source movement. 
+Examples of its victories are the Linux kernel, Mozilla Firefox, \LaTeX, Vim, and other widespread software. 
 
+To understand the definition of the \textit{free and open source} in free and open source hardware, one must turn to its founding essays. Here is a good working definition of this:
+
+TODO actually write the definition \cite{b0_stallman}.
+
+Open source is not the same thing as free and open source [CITATION REQUIRED], and to not do injustice to the ideals of the revolution, this project, unlike much of the literature, will not drop the \textit{'F'} in FOSH nor in writing nor in definition.
+This theory and youthful, revolutionary spirit will guide the project as an anchor.
+
+\subsection{Where is the Hardware?}
 An overview of hardware and its difficulties is needed as a good background information. 
+
+The original Free and Open Source movement was about software not hardware.
+% There needs to then be an extension of the principles to Hardware.
+
+
+\section{TODOs}
+% We need an introduction to what free and open source is. 
+% A history of this in the software realm and how this idea is extending to hardware is needed. 
+
+% We need to understand what are the values and principles of free and open source, and how they exactly relate to free and open source hardware (FOSH).
+% To this end we should consult the founder of it all Richard Stallman (RMS).
+% This should be a good source to read into
+% \textbf{Free Software, Free Society: Selected Essays of Richard M. Stallman}
+% \cite{b0_stallman}.
+
 
 Then, we also need to explain why a literature review is needed.
 What exactly does our work add?
@@ -78,14 +116,14 @@ I had vastly underestimated the amount of work in this field, and now I understa
 This paper lays out some very crucial starting point information.
 It even has a section of literature review for us to start.
 
-\subsubsection{Association}
+\subsubsection{Open Source Hardware Association}
 There is an open source hardware association that tracks these hardware.
 \href{https://www.oshwa.org}{Open Source Hardware Association}
 This is a very crucial resource for us to dive into. 
 The association gives out certification for projects that meet its requirements
 \href{https://certification.oshwa.org/list.html}{https://certification.oshwa.org/list.html}
 
-\subsubsection{Journal}
+\subsubsection{Open Source Hardware Journals}
 There have also been journals that have been dedicated to the FOSH.
 \begin{enumerate}
     \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}

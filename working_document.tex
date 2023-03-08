@@ -39,19 +39,12 @@ However, the full report should evolve out of this document.
 
 \section{Introduction}
 
-\subsection{Purpose of this}
+\subsection{Purpose of this Literature Review}
 This project seeks to lay a ground build by systematic literature review for the layman and the practitioner to understand the free and open source hardware (FOSH).
-It assumes no knowledge of the free and open source movement, nor hardware.
-Through explaining all of this and more from the available literature, the project seeks to answer the following \textbf{Research Questions}:
-RQ1: What is the state-of-the art FOSH and what are the performance of this best FOSH? How does it compare in terms of performance and other aspects with the non-FOSH state-of-the-art? 
-
-RQ2: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
-
-RQ3: How does non-FOSH compare with FOSH in terms of design and licsensing?
-
-RQ4: To what extent is FOSS more adapted FOSH development, and what are the factors that contribute to any observed differences in their adaptability?
-
-RQ5: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
+It assumes no knowledge of the free and open source software (FOSS) movement, nor hardware.
+Through explaining all of this and more from the available literature, the project seeks to answer what the state of FOSH by understanding its breadth and how it compares with nonFOSH.
+\textbf{Then, we also need to explain why a literature review is needed.}
+\textbf{What exactly does our work add?}
 
 \subsection{Where is the Freedom?}
 We have on our hands a revolution of technology. 
@@ -74,7 +67,7 @@ Who set your software free} \cite{song_GNUs_Not_Unix}.
 The passion and revolution of this movement, for users to take back ownership of their technology, is incredibly powerful. 
 No literature on the topic of open source anything can distance itself with this revolutionary zeal. 
 While it has not been fully actualised, it has permeated many aspects of our lives over the years.
-We have the rise of platforms such as GitHub and the widespread adoption of the Public Licenses preached by the Free and Open Source movement. 
+We have the rise of platforms such as GitHub and the widespread adoption of the Free Licenses preached by the Free and Open Source movement. 
 Examples of its victories are the Linux kernel, Mozilla Firefox, \LaTeX, Vim, and other widespread software. 
 
 To understand the definition of the \textit{free and open source} in free and open source hardware, one must turn to its founding essays. Here is a good working definition as quoted by the source itself:
@@ -94,6 +87,18 @@ To understand the definition of the \textit{free and open source} in free and op
     While we can distinguish various nonfree distribution schemes in terms of how far they fall short of being free, we consider them all equally unethical.
 \end{quote} \cite{b0_stallman}.
 
+This movement is about defining what technology means. 
+It is rooted in the community and the liberty of sharing knowledge with one's neighbour. 
+To be shackled in proprietary restraints on the intellectual property is to go against the definition of technology.
+
+The main mechanism that this freedom is enforced is through licensing and mainly that of copyleft. 
+Free software can be distributed as long as it remains free. 
+This effectively prevents the software from becoming proprietary. 
+This is what is known as copyleft, so called because it uses copyright law subversively \cite{b0_stallman}.
+Under this category, there can be many licences that the Free Software Foundation considers to be free.
+\href{https://www.gnu.org/licenses/license-list.html}{Free Licsences}
+The most famous being the GNU Public License or GPL series.
+
 Open source is not the same thing as free and open source; in fact the \textit{free} derives the open source property \cite{b0_stallman}. 
 To not do injustice to the ideals of the revolution, this project, unlike much of the literature, will not drop the crucial \textit{'F'} in FOSH nor in writing nor in definition.
 This theory and youthful, revolutionary spirit will be the guiding anchor of this review.
@@ -102,22 +107,33 @@ This theory and youthful, revolutionary spirit will be the guiding anchor of thi
 An overview of hardware and its difficulties is needed as a good background information. 
 
 The original Free and Open Source movement was about software not hardware.
-% There needs to then be an extension of the principles to Hardware.
+There needs to then be an extension of the principles to Hardware.
+Obviously the \textit{ware} in hardware is not the physical object, rather all the intellectual property required to design, build, and use the hardware. 
+Therefore, the extension of FOSS to FOSH is a natural one, as they both concern the intellectual property themselves. 
 
+\section{Research Questions}
+\subsubsection{What Hardware?}
+\label{RQ1}
+Hardware is a very broad term that encompasses many pieces of technology.
+The Open Source Hardware Association lists [NUMBER] of hardware identified at [DATE].
+The first research question of this literature review is to understand the breadth of free hardware.
 
-\section{TODOs}
-% We need an introduction to what free and open source is. 
-% A history of this in the software realm and how this idea is extending to hardware is needed. 
+RQ1: What are the available state-of-the-art FOSH in the different categories of hardware?
 
-% We need to understand what are the values and principles of free and open source, and how they exactly relate to free and open source hardware (FOSH).
-% To this end we should consult the founder of it all Richard Stallman (RMS).
-% This should be a good source to read into
-% \textbf{Free Software, Free Society: Selected Essays of Richard M. Stallman}
-% \cite{b0_stallman}.
+\subsubsection{Technical Specifications of FOSH}
+As the stereotype goes, the devout follower of the free software ethos, will run an old-libre booted ThinkPad.
+It will be slow, and out of date, but it is damn free. 
+That is, while there has been many developments by champions of the movement, often, FOSS can be technically inferior to the proprietary solution. 
+However, as Stallman puts it, "it would have a social advantage, allowing users to cooperate, and an ethical advantage respecting the user's freedom" \cite{b0_stallman}.
+The younger FOSH therefore, should be plagued with matters of technical inferiority a lot more than the FOSS. 
+In this literature review, we wish to answer this hypothesis by asking the following questions:
 
+RQ2: What is the state-of-the art FOSH? What are its technical specifications compared to nonFOSH? 
 
-Then, we also need to explain why a literature review is needed.
-What exactly does our work add?
+RQ3: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
+
+RQ4: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
+
 
 \section{Readings done by Ali}
 

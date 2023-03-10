@@ -18,6 +18,7 @@ https://openhardware.metajnl.com/articles/10.5334/joh.30
     Summarise briefly about each paper read
 3. Summarise all types of hardware found
     ~(personal, scientific, embedded or specialised)
+    Collect all licences found for the hardware
 4. Find any sellers or distributors of these hardwares.
     Some hardware may not be published scientifically, but they are FOSH
 5. Find benchmarks to compare the hardware

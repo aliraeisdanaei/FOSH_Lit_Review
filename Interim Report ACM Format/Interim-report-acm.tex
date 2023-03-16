@@ -1,0 +1,461 @@
+%%
+%% This is file `sample-acmtog.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `acmtog')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-acmtog.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[acmtog]{acmart}
+%% NOTE that a single column version is required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+% \setcopyright{acmcopyright}
+% \copyrightyear{2018}
+% \acmYear{2018}
+% \acmDOI{XXXXXXX.XXXXXXX}
+
+
+% %%
+% %% These commands are for a JOURNAL article.
+% \acmJournal{TOG}
+% \acmVolume{37}
+% \acmNumber{4}
+% \acmArticle{111}
+% \acmMonth{8}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Interim Report: FOSH Literature Review}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Ali Raeisdanaei}
+\authornote{Both authors contributed equally to this research.}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}
+}
+
+\author{Jingyue Zhang}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}
+}
+
+\author{Tiantian Lin}
+\affiliation{%
+ \institution{University of Toronto}
+ \country{Canada}}
+
+\author{Ziqian Qiu}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+% \renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+Our project was a systematic literature review of Free and Open Source Hardware (FOSH).
+Since starting to look at the literature on this subject, we have learned many things. 
+
+Firstly, the field is relatively new, yet somewhat vast at the same time. 
+The types of hardware we are considering were very limited.
+There have been two journals that have been started since 2017, and our project will base most of its review. 
+This is good news for our project since it means our review is a systematic review of almost \textit{all} the literature on this subject. 
+
+Given the new information, we have refactored and refined some of our research questions. 
+Some questions from the proposal may be beyond the scope of a single paper to be answered, so some may be omitted altogether. 
+
+You can see a repository of our project along with a working document that goes over the details
+\href{https://github.com/aliraeisdanaei/FOSH_Lit_Review/}{here}
+(Not finished).
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+% \begin{CCSXML}
+% <ccs2012>
+%  <concept>
+%   <concept_id>10010520.10010553.10010562</concept_id>
+%   <concept_desc>Opensoure Hardware~Embedded systems</concept_desc>
+%   <concept_significance>500</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>10010520.10010575.10010755</concept_id>
+%   <concept_desc>Computer systems organization~Redundancy</concept_desc>
+%   <concept_significance>300</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>10010520.10010553.10010554</concept_id>
+%   <concept_desc>Computer systems organization~Robotics</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>10003033.10003083.10003095</concept_id>
+%   <concept_desc>Networks~Network reliability</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+% </ccs2012>
+% \end{CCSXML}
+
+% \ccsdesc[500]{Computer systems organization~Embedded systems}
+% \ccsdesc[300]{Computer systems organization~Redundancy}
+% \ccsdesc{Computer systems organization~Robotics}
+% \ccsdesc[100]{Networks~Network reliability}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Open source design, Open source hardware}
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+The main outlook we have towards FOSH is unlike the rest of the literature. 
+That is they only consider, at least nominally, only Open Source Hardware. 
+We will consider \textunderscore{Free} and Open Source Hardware. 
+
+To ground this term of \textit{Freedom}, 
+we will heavily rely on Richard Stallman's essay and works on similar Free and Open Source Software \cite{b0_stallman}.
+
+In the introduction, we will give a preface on Stallman's definition of Free and Open Source and how it will relate to hardware.
+Then we will also give a background on hardware, and the recent advancements in both academia and commercial companies in FOSH.
+Here is where we discuss the major journals that have been started. 
+
+We then ground our research questions into our introduction.
+Here are the research questions we have so far. 
+Note that these are not final yet, and they will need further refining.
+Notably, RQ0 was added to address the question of Freedom as we identified during our readings. 
+
+RQ0: What are the types of licences that the OSH is using?
+
+RQ1: What are the available state-of-the-art FOSH in the different categories of hardware?
+
+RQ2: What is the state-of-the-art FOSH? What are its technical specifications compared to non-FOSH? 
+
+RQ3: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
+
+RQ4: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
+
+This project seeks to lay a ground built by systematic literature review for the layman and the practitioner to understand the free and open source hardware (FOSH).
+It assumes they have no knowledge of the free and open source software (FOSS) movement, nor hardware.
+Through explaining all of these and more from the available literature, the project seeks to answer what the state of FOSH by understanding its breadth and how it compares with non-FOSH.
+\textbf{Then, we also need to explain why a literature review is needed.}
+\textbf{What exactly does our work add?}
+
+\section{Background Literature}
+We will include some of the analyses that previous researchers have done on this topic. The major references are: TODO
+
+\subsection{Where is the Freedom?}
+We have on our hands a revolution of technology. 
+And it is not the endless march of \textit{forward} preached by exploitive companies.
+This revolution is about \textbf{our} freedom to use technology for our learning, fun, and betterment.
+We use technology; technology does not use us. 
+The \textit{Free} in Free and Open Source is free as in freedom, as in liberty.
+Freedom and liberty over our technology are the extensions of our freedom and liberty over our personhood.
+This revolution is championed by Richard Stallman, computer scientist, philosopher, preacher, saint, and the founder of GNU and the Free Source Foundation \cite{b0_stallman}.
+As the \textit{popular} song goes \textit{Remember Richard Stallman,
+Who set your software free} \cite{song_GNUs_Not_Unix}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=240px]{Images/the_wise_gnu.jpg}
+    \caption{Richard Matthew Stallman as depicted in lore}
+    \label{fig:rms}
+\end{figure}
+
+The passion and revolution of this movement, for users to take back ownership of their technology, is incredibly powerful. 
+No literature on the topic of open source anything can distance itself from this revolutionary zeal. 
+While it has not been fully actualized, it has permeated many aspects of our lives over the years.
+We have the rise of platforms such as GitHub and the widespread adoption of the Free Licenses preached by the Free and Open Source movement. 
+Examples of its victories are the Linux kernel, Mozilla Firefox, \LaTeX, Vim, and other widespread software. 
+
+To understand the definition of the \textit{free and open source} in free and open source hardware, one must turn to its founding essays. Here is a good working definition as quoted by the source itself:
+
+\begin{quote}
+    A program is a free software if the program’s users have the four essential freedoms:
+
+    \begin{itemize}
+        \item The freedom to run the program as you wish, for any purpose (freedom 0).
+        \item The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). 
+            Access to the source code is a precondition for this.
+        \item The freedom to redistribute copies to help your neighbour (freedom 2).
+        \item The freedom to distribute copies of your modified versions to others (freedom 3). 
+            Doing this gives the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+    \end{itemize}
+    A program is a free software if it gives users adequately all of these freedoms. Otherwise, it is non-free. 
+    While we can distinguish various non-free distribution schemes in terms of how far they fall short of being free, we consider them all equally unethical.
+\end{quote} \cite{b0_stallman}.
+
+This movement is about defining what technology means. 
+It is rooted in the community and the liberty of sharing knowledge with one's neighbour. 
+To be shackled in proprietary restraints on intellectual property is to go against the definition of technology.
+
+The main mechanism by which this freedom is enforced is through licensing and mainly that of copyleft. 
+Free software can be distributed as long as it remains free. 
+This effectively prevents the software from becoming proprietary. 
+This is what is known as copyleft, so called because it uses copyright law subversively \cite{b0_stallman}.
+Under this category, there can be many licences that the Free Software Foundation considers free.
+\href{https://www.gnu.org/licenses/license-list.html}{Free Licences}
+The most famous is the GNU Public License or GPL series.
+
+\subsection{Where is the Hardware?}
+An overview of hardware and its difficulties is needed as good background information. 
+
+The original Free and Open Source movement was about software, not hardware.
+There needs to then be an extension of the principles to Hardware.
+Obviously, the \textit{ware} in hardware is not the physical object, but rather all the intellectual property required to design, build, and use the hardware. 
+Similar to \cite{p1_def_succ}, these include all computer-aided design (CAD) files, blueprints, bills of materials (BoMs), and so on. 
+Therefore, the extension of FOSS to FOSH is a natural one, as they both concern the intellectual property themselves. 
+
+\section{Research Questions}
+
+\subsection{Freedom in OSH}
+Open source is not the same thing as free and open source; in fact, the \textit{free} derives the open source property \cite{b0_stallman}. 
+To not do injustice to the ideals of the revolution, this project, will not drop the crucial \textit{'F'} in FOSH nor in writing nor in the definition.
+This theory and youthful, revolutionary spirit will be the guiding anchor of this review.
+
+Much of the literature omits the crucial \textit{'F'} in FOSH.
+In our literature review, we will determine the degree to which the original principle of freedom is lost not only in writing but in implementation.
+
+RQ0: What are the types of licences that the OSH is using?
+
+\subsection{What Hardware?}
+\label{RQ1}
+Hardware is a very broad term that encompasses many pieces of technology.
+The Open Source Hardware Association lists [NUMBER] of hardware identified at [DATE].
+The first research question of this literature review is to understand the breadth of free hardware.
+
+RQ1: What are the available state-of-the-art FOSH in the different categories of hardware?
+
+\subsection{Technical Specifications of FOSH}
+As the stereotype goes, the devout follower of the free software ethos will run an old-libre booted ThinkPad. It will be slow, and out of date, but it is damn free. 
+That is, while there have been many developments by champions of the movement, often, FOSS can be technically inferior to the proprietary solution. 
+However, as Stallman puts it, 
+\begin{quote}
+"it would have a social advantage, allowing users to cooperate, and an ethical advantage respecting the user's freedom "
+\end{quote}
+\cite{b0_stallman}.
+The younger FOSH therefore should be plagued with matters of technical inferiority a lot more than the FOSS. 
+In this literature review, we wish to answer this hypothesis by asking the following questions:
+
+RQ2: What is the state-of-the-art FOSH? What are its technical specifications compared to non-FOSH? 
+
+RQ3: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
+
+RQ4: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
+
+
+\section{Methodology}
+
+The main methodology of the systematic literature review is backward propagation. 
+We started with a seed of papers on this subject, and we checked the citations used in the seeds recursively. 
+
+Part of the methodology would also be to read through all the literature in the two FOSH journals and to record summaries, benchmarks, and the licences of the hardware they proposed.
+These two journals are the 
+\begin{enumerate}
+    \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}
+    \item \href{https://www.sciencedirect.com/journal/hardwarex}{HardwareX}
+\end{enumerate}
+
+
+\section{Results}
+
+The expected results for RQ0 will be something like the following:
+we found $N$ number of hardware from literature and $M$ number of hardware available commercially. 
+Of this $a$ were of licence $b$, and so on. 
+This shows that the hardware is predominantly free by the standards of Richard Stallman's \cite{b0_stallman}.
+Or alternatively, we may find that the hardware is simply open source, and the crucial freedom in the licensing has been lost. 
+
+We will define certain benchmarks for hardware across $N$ number of hardware categories. 
+These categories should be personal computing, scientific, and embedded specialized hardware. 
+Then from each category, we will identify a series of instances of hardware to conclude that it is state-of-the-art.
+
+We will also systematically compare the recorded benchmarks to the standard benchmarks on non-FOSH to answer RQ2. 
+
+RQ3 should really be refined. 
+This is a harder question to answer, but it can be done by looking at the benchmark comparisons, and the lifetime, and ubiquity of the FOSH in research or the industry.
+
+To answer the speculative question of RQ4, we will point out the overall trends in the literature and the industry. 
+We also expect to identify certain challenges, or missing areas of research, that FOSH is facing.
+
+\section{Discussion}
+Discuss the potential future developments, opportunities, and challenges that FOSH is facing as well as identify the fields where we could focus more attention on FOSH  
+\section{Conclusion}
+Conclude the result we found and answer the research questions.
+\nocite{*}
+\printbibliography
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+to be finished
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Critique And Solutions}
+\begin{itemize}
+\item {\textbf{\itshape Critique}}: "The difference between FOSH can also be a matter of study. Different hardware types and different design philosophies may lead to different levels of openness"
+\par{\textbf{\itshape Solution}}: "As part of our ongoing literature review, we aim to systematically examine the existing literature on FOSH, including their hardware types and design philosophies, to better understand their relationship with openness levels. In doing so, we plan to categorize the current literature in this area based on our systematic review, which will enable us to identify any knowledge gaps and areas that require further investigation."
+\item {\textbf{\itshape Critique}}: "RQ1 and RQ4 have overlap and I think they can be combined into one."
+\par{\textbf{\itshape Solution}}: "We have refactored some of these research questions, and we will continue to refine them as we increase our expertise on the subject. "
+\item {\textbf{\itshape Critique}}:"What does performance mean in FOSH? How is it measured and what makes one method state-of-the-art"
+\par{\textbf{\itshape Solution}}: 
+FOSH can be evaluated using a combination of quantitative and qualitative measures, depending on the specific hardware type and application. The goal is to achieve the best possible balance between functionality, efficiency, reliability, and community engagement, while also encouraging innovation, collaboration, and knowledge sharing
+The specific metrics used to measure performance in FOSH can vary depending on the hardware type and application, but can include factors such as speed, power consumption, accuracy, durability, and ease of use. Our plan is to examine the ways in which performance is discussed and evaluated thorough review of the literature.
+
+\item {\textbf{\itshape Critique}}: "The proposal does not provide specific details on the selection criteria for the literature review" 
+\par{\textbf{\itshape Solution}}: For the literature review, we will specify the databases, keywords, and inclusion/exclusion criteria we used to identify relevant articles.
+\item {\textbf{\itshape Critique}}: "There may be publication bias towards positive results in the literature review" 
+\par{\textbf{\itshape Solution}}: This is a very good point! Publication bias and selection bias indeed can be significant issues in research. In order to address publication bias in the literature review, we will include a discussion of potential sources of bias, such as publication bias or selective reporting of positive results. We will also consider including studies that have reported null or negative findings, to help ensure that the review is as comprehensive and unbiased as possible.
+\item {\textbf{\itshape Critique}}: "Given that there are five research questions, it may be challenging to analyze each one in detail" 
+\par{\textbf{\itshape Solution}}: We will prioritize the research questions based on their significance and potential impact on the field of FOSH. We might also combine RQ0 and RQ2, since both questions relate to comparing FOSH and non-FOSH in terms of performance, design, and licensing.
+\item {\textbf{\itshape Critique}}: "When conducting a literature review, it is crucial to consider the publication date of the papers being reviewed.  " 
+\par{\textbf{\itshape Solution}}:  In order to address this issue, we will set a time frame (in 5 to 10 years) for the literature review and only include papers that have been published within that time frame. Therefore we will only be reviewing the most up-to-date research and the findings are relevant and current. 
+\item {\textbf{\itshape Critique}}: "RQ2, the team tries to find out what are the differences in designing FOSS and FOSH. While I understand that software and hardware designs differ significantly, could you please explain the exact differences that the team is looking to uncover" 
+\par{\textbf{\itshape Solution}}: Actually, we are comparing FOSH and non-FOSH. We refined the research question and now we are finding the technical specifications compared with non-FOSH.
+\item {\textbf{\itshape Critique}}: "The team assumes that all FOSH improvements are slower than FOSS, but in my experience, there are some cases where this may not hold true." 
+\par{\textbf{\itshape Solution}}: In some cases, it might hold true. Therefore, we removed this statement.
+\item {\textbf{\itshape Critique}}: "Team briefly discussed ‘Semi-structured interview’, and no detailed information was disclosed" 
+\par{\textbf{\itshape Solution}}: We now removed the interview section in our methodology part. 
+\item {\textbf{\itshape Critique}}:"RQ4, the team mentioned what opportunities and challenges FOSH might face in the future, the question was broad in scope and the team should have made the question more specific. For example, by indicating the specific aspects that the potential opportunities and challenges would be for FOSH" 
+\par{\textbf{\itshape Solution}}: It is true, we will narrow down the scope of our research question to make it easier. Therefore, we now only discuss the main challenges and drawbacks associated with the development, adoption and sustainability of the FOSH.  
+\item {\textbf{\itshape Critique}}: "The proposal presents a study of disadvantages and challenges of adopting FOSH, it could be suggested to add some benefits of adopting FOSH and the advantages of FOSH compared to non-FOSH in some circumstance." 
+\par{\textbf{\itshape Solution}}: Good suggestion. We will add a new section to discuss the benefits and comparisons with non-FOSH.
+
+
+\end{itemize}
+
+\section{ToDo List}
+\begin{enumerate}
+\item Divide up the readings between all four members. (There are two journals since 2017 that should be read. 
+There are other commercial applications and companies selling FOSH that need to be considered. Other papers that have been found through the backward propagation method should also be added to the reading list.)
+\item Do the reading, design a literature map, and summarise briefly about each paper read
+\item Collecting information on the hardware found in terms of category, benchmarks, and licence. 
+\item Find benchmarks to compare with the non-FOSH
+\item Perform the analysis and write the report.
+\end{enumerate}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-acmtog.tex'.

@@ -10,7 +10,7 @@
 % \usepackage{subfiles}
 
 \usepackage{biblatex}
-\addbibresource{../ref.bib}
+\bibliography{../ref.bib}
 
 % \usepackage{booktabs}
 % \usepackage{multicol}
@@ -33,13 +33,84 @@
 
 \section{Introduction}
 
-What was our original project briefly?
-What did we learn since our proposal? 
+Our project was a systematic literature review of Free and Open Source Hardware (FOSH).
+Since starting to look at the literature on this subject, we have learned many things. 
+
+Firstly, that the field is relatively new, yet somewhat vast at the same time. 
+The types of hardware we are considering were very limited.
+There have been two journals that have been started since 2017, that our project will base most of its review from. 
+This is good news for our project, since it means our review is a systematic review of almost \textit{all} the literature on this subject. 
+
+Given the new information, we have refactored and refined some of our research questions. 
+Some questions from the proposal may be beyond the scope of a single paper to be answered, so some may be omitted altogether. 
+
+You can see a repository of our project along with a working document that goes over the details
+\href{https://github.com/aliraeisdanaei/FOSH_Lit_Review/}{here}.
 
 \section{Sections}
-Headings and subheadings showing the major divisions of the literature review, methods, and expected results from the application of each method as well as overall.
-A brief summary of what will go in each subsection, including the references to be discussed in each subsection of the literature review.
-The major references you will rely on.
+% Headings and subheadings showing the major divisions of the literature review, methods, and expected results from the application of each method as well as overall.
+% A brief summary of what will go in each subsection, including the references to be discussed in each subsection of the literature review.
+% The major references you will rely on.
+
+Here we will go over the sections of our final report, and a brief summary of its contents. 
+
+\subsection{Introduction}
+The main outlook we have towards FOSH is unlike the rest of the literature. 
+That is they only consider, at least nominally, only Open Source Hardware. 
+We will consider \textunderscore{Free} and Open Source Hardware. 
+
+To ground this term of \textit{Freedom}, 
+we will heavily rely on Richard Stallman's essay and works on the similar Free and Open Source Software \cite{b0_stallman}.
+
+In the introduction, we will give a preface on what Stallman's definition of Free and Open Source is and how it will relate to hardware.
+Then we will also give a background on hardware, and the recent advancements in both academia and the commercial companies in FOSH.
+Here is where we discuss the major journals that have been started. 
+
+We then ground our research questions into our introduction.
+Here are the research questions we have so far. 
+Note that these are not final yet, and they will need further refining.
+Notably, RQ0 was added to address the question of Freedom as we identified during our readings. 
+
+RQ0: What are the types of licences that the OSH are using?
+
+RQ1: What are the available state-of-the-art FOSH in the different categories of hardware?
+
+RQ2: What is the state-of-the art FOSH? What are its technical specifications compared to nonFOSH? 
+
+RQ3: What are the main challenges and drawbacks associated with the development, adoption, and sustainability of FOSH?
+
+RQ4: What are the potential future developments, opportunities, and challenges that FOSH is facing, and what are the implications of these for the growth and sustainability of the FOSH movement?
+
+\subsection{Methodology}
+The main methodology of the systematic literature review is the back propagation. 
+We started with a seed of papers on this subject, and we checked the citations used in the seeds recursively. 
+
+Part of the methodology would also be to read through all the literature in the two FOSH journals, and to record summaries, benchmarks, and the licences of the hardware they proposed.
+These two journals are the 
+\begin{enumerate}
+    \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}
+    \item \href{https://www.sciencedirect.com/journal/hardwarex}{HardwareX}
+\end{enumerate}
+
+\subsection{Results}
+
+The expected results for RQ0 will be something like the following:
+we found $N$ number of hardware from literature and $M$ number of hardware available commercially. 
+Of this $a$ were of licence $b$, and so on. 
+This shows that the hardware are predominantly free by the standards of Richard Stallman's \cite{b0_stallman}.
+Or alternatively, we may find that the hardware is simply open source, and the crucial freedom in the licensing has been lost. 
+
+We will define certain benchmarks for hardware across $N$ number of hardware categories. 
+These categories should be personal computing, scientific, and embedded specialised hardware. 
+Then from each category we will identify a series of instances of hardware to conclude that it is the state-of-the-art.
+
+We will also systematically compare the recorded benchmarks to the standard benchmarks on nonFOSH to answer RQ2. 
+
+RQ3 should really be refined. 
+This is a harder question to answer, but it can be done by looking at the benchmark comparisons, and the lifetime, and ubiquity of the FOSH in research or the industry.
+
+To answer the speculative question of RQ4, we will point out the overall trends in the literature and the industry. 
+We also expect to identify certain challenges, or missing areas of research, that FOSH is facing.
 
 \section{Appendix A}
 Appendix A: the changes you've made to your project 
@@ -55,19 +126,20 @@ according to the comments/feedback you received from your classmates
 
 \section{Appendix B: TODOs}
 
-1. Divide up the reading between all four members
-2. Actually do the reading
-    Design a literature map
-    Summarise briefly about each paper read
-3. Summarise all types of hardware found
-    ~(personal, scientific, embedded or specialised)
-    Collect all licences found for the hardware
-4. Find any sellers or distributors of these hardwares.
-    Some hardware may not be published scientifically, but they are FOSH
-5. Find benchmarks to compare the hardware
-6. Find state-of-the-art in FOSH and nonFOSH from each category
+\begin{enumerate}
+    \item Enumerate and divide up the reading between all four members.
+        There are two journals since 2017 that should be read. 
 
-Later on we would have to analyse our readings and notes to determine the challenges, and future predictions, ...
+        There are other commercial applications and companies selling FOSH that need to be considered. 
+        Other papers that have been found through the back propagation method should also be added to the reading list.
+        
+    \item Do the reading.
+        Designing a literature map. 
+        Summarising each paper. 
+        Collecting information on the hardware found in terms of category, benchmarks, and liscence. 
+    \item Compare benchmarks with the nonFOSH.
+    \item Perform the analysis and write the report. 
+\end{enumerate}
 
 
 \nocite{*}

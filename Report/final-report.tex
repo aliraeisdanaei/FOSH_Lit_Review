@@ -2,15 +2,11 @@
 
 \usepackage{subfiles}
 
-\usepackage{biblatex}
-\bibliography{ref.bib}
-% \addbibresource{ref.bib}
-
+\usepackage{natbib}
 
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
-
 \citestyle{acmauthoryear}
 
 \begin{document}
@@ -95,6 +91,9 @@ These two journals are the
 
 \section{Discussion}
 Discuss the potential future developments, opportunities, and challenges that FOSH is facing as well as identify the fields where we could focus more attention on FOSH  
+
+\section{Critique And Solutions}
+
 \section{Conclusion}
 Conclude the result we found and answer the research questions.
 
@@ -112,13 +111,12 @@ to be finished
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{Report/ref}
+\bibliography{ref}
+
 
 %%
 %% If your work has an appendix, this is the place to put it.
-\appendix
-
-\section{Critique And Solutions}
+% \appendix
 
 % \section{ToDo List}
 % \begin{enumerate}

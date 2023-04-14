@@ -1,5 +1,6 @@
 \documentclass[acmtog]{acmart}
 
+\usepackage{hyperref}
 \usepackage{subfiles}
 
 \usepackage{natbib}
@@ -63,17 +64,16 @@ You can see a repository of our project along with a working document \ref{sec:C
 \section{Introduction}
 \subfile{introduction}
 
-\section{Background Literature}
-We will include some of the analyses that previous researchers have done on this topic. The major references are: TODO
+% \section{Background Literature}
+% We will include some of the analyses that previous researchers have done on this topic. The major references are: TODO
 
-\subsection{Where is the Freedom?}
-We will follow the definition of Stallman\cite{b0_stallman}, as well as expanding our research to define the "open source" in hardware
-\subsection{Where is the Hardware?}
-An overview of hardware and its difficulties is needed as good background information. 
+% \subsection{Where is the Freedom?}
+% We will follow the definition of Stallman\cite{b0_stallman}, as well as expanding our research to define the "open source" in hardware
+% \subsection{Where is the Hardware?}
+% An overview of hardware and its difficulties is needed as good background information. 
 
 \section{Methodology}
-The main methodology of the systematic literature review is backward propagation. 
-We started with a seed of papers on this subject, and we checked the citations used in the seeds recursively. 
+\subfile{methodology}
 
 Part of the methodology would also be to read through all the literature in the two FOSH journals and to record summaries, benchmarks, and the licences of the hardware they proposed.
 These two journals are the 

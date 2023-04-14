@@ -1,4 +1,12 @@
 \documentclass[acmtog]{acmart}
+
+\usepackage{subfiles}
+
+% \usepackage{biblatex}
+% \bibliography{ref.bib}
+% \addbibresource{ref.bib}
+
+
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
@@ -10,7 +18,6 @@
 \title{Final Report: FOSH Literature Review}
 
 \author{Ali Raeisdanaei}
-\authornote{Both authors contributed equally to this research.}
 \affiliation{%
   \institution{University of Toronto}
   \country{Canada}
@@ -58,12 +65,7 @@ You can see a repository of our project along with a working document \ref{sec:C
 \maketitle
 
 \section{Introduction}
-\subsection{Background and motivation}
-\subsection{Research question}
-\subsection{Scope and limitations}
-\subsection{Organization of the paper}
-\textbf{Then, we also need to explain why a literature review is needed.}
-\textbf{What exactly does our work add?}
+\subfile{introduction.tex}
 
 \section{Background Literature}
 We will include some of the analyses that previous researchers have done on this topic. The major references are: TODO
@@ -95,8 +97,6 @@ These two journals are the
 Discuss the potential future developments, opportunities, and challenges that FOSH is facing as well as identify the fields where we could focus more attention on FOSH  
 \section{Conclusion}
 Conclude the result we found and answer the research questions.
-\nocite{*}
-\printbibliography
 
 
 %%
@@ -112,7 +112,7 @@ to be finished
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\bibliography{}
 
 %%
 %% If your work has an appendix, this is the place to put it.
@@ -120,21 +120,18 @@ to be finished
 
 \section{Critique And Solutions}
 
-\section{ToDo List}
-\begin{enumerate}
-\item Divide up the readings between all four members. (There are two journals since 2017 that should be read. 
-There are other commercial applications and companies selling FOSH that need to be considered. Other papers that have been found through the backward propagation method should also be added to the reading list.)
-\item Do the reading, design a literature map, and summarise briefly about each paper read
-\item Collecting information on the hardware found in terms of category, benchmarks, and licence. 
-\item Find benchmarks to compare with the non-FOSH
-\item Perform the analysis and write the report.
-
-\section{Working On Document}
-\label{sec:C}
-\end{enumerate}
+% \section{ToDo List}
+% \begin{enumerate}
+% \item Divide up the readings between all four members. (There are two journals since 2017 that should be read. 
+% There are other commercial applications and companies selling FOSH that need to be considered. Other papers that have been found through the backward propagation method should also be added to the reading list.)
+% \item Do the reading, design a literature map, and summarise briefly about each paper read
+% \item Collecting information on the hardware found in terms of category, benchmarks, and licence. 
+% \item Find benchmarks to compare with the non-FOSH
+% \item Perform the analysis and write the report.
+% \section{Working On Document}
+% \label{sec:C}
+% \end{enumerate}
 
 
 \end{document}
 \endinput
-%%
-%% End of file `sample-acmtog.tex'.

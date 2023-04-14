@@ -1,0 +1,140 @@
+\documentclass[acmtog]{acmart}
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\citestyle{acmauthoryear}
+
+\begin{document}
+
+\title{Final Report: FOSH Literature Review}
+
+\author{Ali Raeisdanaei}
+\authornote{Both authors contributed equally to this research.}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}
+}
+
+\author{Jingyue Zhang}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}
+}
+
+\author{Tiantian Lin}
+\affiliation{%
+ \institution{University of Toronto}
+ \country{Canada}}
+
+\author{Ziqian Qiu}
+\affiliation{%
+  \institution{University of Toronto}
+  \country{Canada}}
+
+\begin{abstract}
+Our project was a systematic literature review of Free and Open Source Hardware (FOSH).
+Since starting to look at the literature on this subject, we have learned many things. 
+
+Firstly, the field is relatively new, yet somewhat vast at the same time. 
+The types of hardware we are considering were very limited.
+There have been two journals that have been started since 2017, and our project will base most of its review. 
+This is good news for our project since it means our review is a systematic review of almost \textit{all} the literature on this subject. 
+
+Given the new information, we have refactored and refined some of our research questions. 
+Some questions from the proposal may be beyond the scope of a single paper to be answered, so some may be omitted altogether. 
+
+You can see a repository of our project along with a working document \ref{sec:C} that goes over the details
+\href{https://github.com/aliraeisdanaei/FOSH_Lit_Review/}{here}
+(Not finished).
+\end{abstract}
+
+\keywords{Open source design, Open source hardware}
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+\subsection{Background and motivation}
+\subsection{Research question}
+\subsection{Scope and limitations}
+\subsection{Organization of the paper}
+\textbf{Then, we also need to explain why a literature review is needed.}
+\textbf{What exactly does our work add?}
+
+\section{Background Literature}
+We will include some of the analyses that previous researchers have done on this topic. The major references are: TODO
+
+\subsection{Where is the Freedom?}
+We will follow the definition of Stallman\cite{b0_stallman}, as well as expanding our research to define the "open source" in hardware
+\subsection{Where is the Hardware?}
+An overview of hardware and its difficulties is needed as good background information. 
+
+\section{Methodology}
+The main methodology of the systematic literature review is backward propagation. 
+We started with a seed of papers on this subject, and we checked the citations used in the seeds recursively. 
+
+Part of the methodology would also be to read through all the literature in the two FOSH journals and to record summaries, benchmarks, and the licences of the hardware they proposed.
+These two journals are the 
+\begin{enumerate}
+    \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}
+    \item \href{https://www.sciencedirect.com/journal/hardwarex}{HardwareX}
+\end{enumerate}
+\subsection{Search strategy and selection criteria}
+\subsection{Data extraction and analysis}
+\subsection{Quality assessment}
+
+
+
+\section{Results}
+
+\section{Discussion}
+Discuss the potential future developments, opportunities, and challenges that FOSH is facing as well as identify the fields where we could focus more attention on FOSH  
+\section{Conclusion}
+Conclude the result we found and answer the research questions.
+\nocite{*}
+\printbibliography
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+to be finished
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Critique And Solutions}
+
+\section{ToDo List}
+\begin{enumerate}
+\item Divide up the readings between all four members. (There are two journals since 2017 that should be read. 
+There are other commercial applications and companies selling FOSH that need to be considered. Other papers that have been found through the backward propagation method should also be added to the reading list.)
+\item Do the reading, design a literature map, and summarise briefly about each paper read
+\item Collecting information on the hardware found in terms of category, benchmarks, and licence. 
+\item Find benchmarks to compare with the non-FOSH
+\item Perform the analysis and write the report.
+
+\section{Working On Document}
+\label{sec:C}
+\end{enumerate}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-acmtog.tex'.

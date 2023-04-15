@@ -30,9 +30,10 @@ Most if not all the literature on the subject can be reviewed, along with all th
 %     \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}
 %     \item \href{https://www.sciencedirect.com/journal/hardwarex}{HardwareX}
 % \end{enumerate}
-\subsubsection{Search Scope}
-(image of the search procedure here)
 
+\subsubsection{Search Scope}
+
+TODO (image of the search procedure here)
 
 The publications of the FOSH journals were the initial pool of publications for our search. An effective strategy for acquiring a dependable collection of publications is to search through high-quality bibliographic databases \cite{petersen2015guidelines}. We chose databases that implement a discerning inclusion process, in which in-house editors assess prospective publication venues using factors such as the peer-review system, global diversity of editors and authors, citation influence, and self-citation rates. As a result, we identified the following databases, which have proven successful in prior secondary research: IEEE Explore, ACM library, and Scopus.
 
@@ -130,8 +131,22 @@ After determining the optimal k value, we implemented the K-means clustering alg
 For a better interpretation of the results and a deeper understanding of the themes or topics within each cluster, we extracted the top keywords associated with each cluster. 
 Furthermore, we generated word clouds to visually represent the most prominent keywords within each cluster, which facilitated the identification of prevalent themes and topics. 
 This approach provided valuable insights into the connections between the articles and their potential relevance to the research objectives, while also offering an accessible and engaging means of conveying the information.
+
 \subsection{Scripts And API}
 
-\subsection{Limitations}
+The 
+\href{https://www.oshwa.org/}{Open Source Hardware Association} 
+tracks all FOSH projects. 
+It also provides an 
+\href{https://certificationapi.oshwa.org/documentation}{API}
+that can be used to query information on licensing and collaboration environments.
+
+We used this API to collect 
+2057 
+FOSH projects to date.
+These projects have three pieces with licences; these are hardware, software, and documentation. 
+Additionally, the API was used to collect the websites, and platforms used to store the project. 
+
+% \subsection{Limitations}
 
 \end{document}

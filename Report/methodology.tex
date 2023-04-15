@@ -1,5 +1,5 @@
 \subsection{literature review}
-Our systematic literature review (SLR) adhered to the methodological guidelines and procedural steps established by Gough et al. [25] and Petticrew & Roberts [27], which can be encapsulated as follows:
+Our systematic literature review (SLR) adhered to the methodological guidelines and procedural steps established by Gough et al.\cite{gough2017introduction} and Petticrew & Roberts \cite{petticrew2008systematic}, which can be encapsulated as follows:
 \begin{itemize}
     \item 1) Formulation of research questions and a conceptual framework; 
     \item 2) Searching and screening for pertinent literature based on predetermined eligibility criteria
@@ -8,7 +8,7 @@ Our systematic literature review (SLR) adhered to the methodological guidelines 
     \item 5) Synthesizing the selected studies within the context of the conceptual framework or using study codes;
     \item 6) Interpreting and disseminating the findings. 
 \end{itemize}
-These steps were executed in conjunction with the PRISMA guidelines provided by [24] to facilitate the various phases of the review process. 
+These steps were executed in conjunction with the PRISMA guidelines provided by \cite{page2021prisma} to facilitate the various phases of the review process. 
 Figure 1 illustrates the stages of the SLR in accordance with the aforementioned guidelines.
 To answer the question regarding the collaborative environments, our method is a grey literature review. 
 The qualitative questions posed can be effectively answered by a systematic literature review, as the movement is very young. 
@@ -22,16 +22,84 @@ Most if not all the literature on the subject can be reviewed, along with all th
 %     \item \href{https://openhardware.metajnl.com/}{Journal of Open Hardware}
 %     \item \href{https://www.sciencedirect.com/journal/hardwarex}{HardwareX}
 % \end{enumerate}
-\subsection{Search Strategy and Selection Criteria}
 \subsubsection{Search Scope}
+(image of the search procedure here)
 
-The publications of the FOSH journals were the initial pool of publications for our search. 
+
+The publications of the FOSH journals were the initial pool of publications for our search. An effective strategy for acquiring a dependable collection of publications is to search through high-quality bibliographic databases \cite{petersen2015guidelines}. We chose databases that implement a discerning inclusion process, in which in-house editors assess prospective publication venues using factors such as the peer-review system, global diversity of editors and authors, citation influence, and self-citation rates. As a result, we identified the following databases, which have proven successful in prior secondary research: IEEE Explore, ACM library, and Scopus.
 
 \subsubsection{Screening And Selection}
+The search string underwent multiple refinements to maximize the number of relevant studies within the scope of the Systematic Literature Review (SLR). For example, the initial search string included terms such as "open-source hardware" and "open hardware," as demonstrated in block. 
+\par
+\begin{lstlisting}
+("Document Title":open source hardware)
+OR ("Document Title":opensource)
+OR ("Document Title":open-source)
+AND ("Abstract":hardware)
+\end{lstlisting}
+Subsequently, a secondary search string was constructed, incorporating key terms like "community," "state of the art," and "collaboration," which are commonly associated with FOSH applications used in academic and industrial research, as identified in systematic reviews.
+
+This approach yielded a total of 372 records from the aforementioned sources. The records of the retrieved articles were exported to a CSV file to identify duplicates and complete any missing information.
+
+The aforementioned query was executed on April 1st, 2023 and we defined the inclusion and exclusion criteria to filter the extracted publications from the databases. Specifically, the inclusion criteria were as follows:
+
+\begin{table}[htbp]
+\centering
+\caption{Inclusion and Exclusion Criteria}
+\begin{tabular}{|c|c|p{6.5cm}|}
+\hline
+\textbf{I/E} & \textbf{No.} & \multicolumn{1}{c|}{\textbf{Criteria}} \\
+\hline
+I & 1 & Include publications that addressed at least one of the research questions outlined in this study . \\
+\hline
+I & 2 & Include peer-reviewed primary studies that are relevant to FOSH (cross-checking and validation needed for such studies). \\
+\hline
+I & 3 & If there are multiple relevant studies that report the same research, then include the longest study only and exclude the rest of them. \\
+\hline
+E & 1 & Exclude publications not written in English \\
+\hline
+E & 2 & Exclude publications with no accessible full-text\\
+\hline
+E & 3 & Exclude tables of contents, editorials, white papers, commentaries, extended abstracts, communications, books, tutorials, non-peer-reviewed papers, and duplicates. \\
+\hline
+E & 4 & Exclude brief papers comprising fewer than six pages in single-column format. \\
+\hline
+E & 5 & Exclude review articles and secondary studies. \\
+\hline
+E & 6 & Exclude papers deemed irrelevant to FOSH based on title, abstract, keywords, introduction, and conclusion, requiring cross-checking and validation. \\
+\hline
+\end{tabular}
+\label{tab:criteria}
+\end{table}
+
+In a distinct structure, the screening process for the n=478 records commenced with a review of the titles and abstracts. Studies that did not meet the inclusion criteria outlined in Table (3) and were not within the scope of the SLR were eliminated. Following this procedure, n=100 records from the IEEE explore database, as well as JOH and HardwareX journals, were excluded, leaving n=378 articles. The remaining articles were examined for eligibility, and those lacking a DOI, having access issues (n=3), or not being primary research (e.g., literature reviews and surveys) were removed (n=3). Subsequently, each remaining article was assessed based on a quality criterion employing a Likert scale survey, which ranged from 1 to 3, as shown in Table (2). These survey questions were designed with FOSH features and the SLR scope's relevance in mind. All questions carried equal weight, meaning that an article's overall score was determined by the average of these questions' scores. Ultimately, articles with a score of "3" were excluded, resulting in n=242 articles, as illustrated in Fig. (1).
+
+\begin{table}[htbp]
+\centering
+\caption{Quality survey to assess the articles in the SLR.}
+\begin{tabular}{|p{0.4\linewidth}|c|}
+\hline
+\textbf{Survey Questions} & \textbf{Range (1-3)} \\
+\hline
+Q1. Does the study describe clear criteria for the selection of the hardware and software components used in the AT? & (1: strongly disagree to 3: strongly agree) \\
+\hline
+Q2. Does the study show a method and experiments that allow validating the AT? & (1: strongly disagree to 3: strongly agree) \\
+\hline
+Q3. Does the study indicate the scope and limitations of the AT developed? & (1: strongly disagree to 3: strongly agree) \\
+\hline
+Q4. Is the developed AT accessible, replicable, and reusable? & (1: strongly disagree to 3: strongly agree) \\
+\hline
+Q5. Has the study been cited by other authors? & (1: Yes, 3: No) \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Snowballing}
 
-\subsection{Data Extraction and Analysis}
+To expand the selection of investigations included in the SLR, snowballing guidelines provided by Wohlin \cite{wohlin2014guidelines} were utilized to ensure that our study did not overlook any pertinent publications. Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. However, due to the relatively small number of significant publications found in other sources, we conducted only one iteration, resulting in the addition of n=10 publications from sources beyond the primary database, IEEE. Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardware (JOH), were incorporated into the search process.
+\subsubsection{Data Extraction and Analysis}
 
+\subsection{Scripts And API}
 
 \subsection{Limitations}

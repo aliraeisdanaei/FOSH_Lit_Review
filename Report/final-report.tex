@@ -3,6 +3,18 @@
 \usepackage{hyperref}
 \usepackage{subfiles}
 \usepackage{natbib}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  frame=single,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  numbers=left, % Add line numbers on the left
+  numberstyle=\tiny, % Set the style for line numbers
+  stepnumber=1, % Show line numbers for every line
+  numbersep=5pt % Set the distance between line numbers and code text
+}
 
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
@@ -79,8 +91,27 @@ You can see a repository of our project along with a working document \ref{sec:C
 
 \section{Results}
 The comprehensive results of our study can be accessed via the subsequent public repository:
-
+\par
 \url{https://github.com/aliraeisdanaei/FOSH_Lit_Review}
+% TODO: FORMAT for Research Question A
+FOSH is a new way of designing and building hardware that's become popular in many areas since it is open for innovation and can be democratically beneficial to the community. Based on the result of the systematic literature review, we can divide the perspective of FOSH in the following categories. electronics and computing, robotics and automation, and education and research.
+\subsection{education and research}
+
+# aspect of education: electronic[4], auto vehicle design, industrial design, computer science,digital media design[3]
+#kind of tool used: RISC-V [18],
+#learning purpose, course: learning microprocessor, hardware based simulator[4], intergrate computer lab[18]
+#newly invented devices: open-source power electronics didactic platform[61]
+#low-cost part
+
+
+\subsection{electronics and computing}
+Some of the most popular and successful hardware are open sourced, such as Risc-V and Arduino. These are free for modification, which is also commonly introduced and extended in the 
+
+\subsection{robotics and automation}
+In general, robots are often created to either complete tasks that human are unable to, or to increase the productivity. VIKTOR III is a open source robot to improve the farming production quality by not only "empower[ing] individuals to grow their own food [but also] serve[ing] as platform for robotics education." This also falls into the category of the benefit of open source product can bring to the field of education. By improving on the current older invention, a open-sourced robot named FarmBot, VIKTOR III can be build only using 1/6 of its cost but with completely same feature. It also uses the state-of-art machine learning technology deep learning that provides a higher plant detection accuracy. The inventors also suggested that it can help astronouts harvest in space. By doing so, it provides a blueprint for future design and study purposes. There are many produces that share the same goal, such as the Yale OpenHand Project, which focus on improving the design process and produce various options for the researchers to adopt on.  The inventor of WoodenHaptics also agrees with the importance of innovation, which is why theyAs a realm that is constantly been developed and updated by new technologies, they belive the ultimate future goal for any open source robot is "identifying willing end users who will put their own design modifications online, thereby allowing progress in the research community to move even faster". In fact, this concept of republishing the modified product is also widley and strongly agreed by many researchers, which leads to the invention of ROS (Robot Operating System) that allows people to communicate. The aspect of FOSH communities will be further discussed later. 
+
+
+
 
 \section{Discussion}
 Based on the result, Discuss the potential future developments, opportunities, and challenges that FOSH is facing as well as identify the fields where we could focus more attention on FOSH.

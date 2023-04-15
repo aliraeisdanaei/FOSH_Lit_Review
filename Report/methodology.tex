@@ -72,24 +72,26 @@ E & 6 & Exclude papers deemed irrelevant to FOSH based on title, abstract, keywo
 \label{tab:criteria}
 \end{table}
 
-In a distinct structure, the screening process for the n=478 records commenced with a review of the titles and abstracts. Studies that did not meet the inclusion criteria outlined in Table (3) and were not within the scope of the SLR were eliminated. Following this procedure, n=100 records from the IEEE explore database, as well as JOH and HardwareX journals, were excluded, leaving n=378 articles. The remaining articles were examined for eligibility, and those lacking a DOI, having access issues (n=3), or not being primary research (e.g., literature reviews and surveys) were removed (n=3). Subsequently, each remaining article was assessed based on a quality criterion employing a Likert scale survey, which ranged from 1 to 3, as shown in Table (2). These survey questions were designed with FOSH features and the SLR scope's relevance in mind. All questions carried equal weight, meaning that an article's overall score was determined by the average of these questions' scores. Ultimately, articles with a score of "3" were excluded, resulting in n=242 articles, as illustrated in Fig. (1).
+In a distinct structure, the screening process for the n=478 records commenced with a review of the titles and abstracts. Studies that did not meet the inclusion criteria outlined in Table (3) and were not within the scope of the SLR were eliminated. Following this procedure, n=100 records from the IEEE explore database, as well as JOH and HardwareX journals, were excluded, leaving n=378 articles. The remaining articles were examined for eligibility, and those lacking a DOI, having access issues (n=3), or not being primary research (e.g., literature reviews and surveys) were removed (n=3). Subsequently, each remaining article was assessed based on a quality criterion employing a Likert scale survey, which ranged from 1 to 3, as shown in Table (2). These survey questions were designed with FOSH features and the SLR scope's relevance in mind. All questions carried equal weight, meaning that an article's overall score was determined by the average of these questions' scores. Ultimately, articles with a total average score above 12 were excluded, resulting in n=242 articles, as illustrated in Fig. (1).
 
 \begin{table}[htbp]
 \centering
 \caption{Quality survey to assess the articles in the SLR.}
-\begin{tabular}{|p{0.4\linewidth}|c|}
+\begin{tabular}{|p{0.6\linewidth}|c|}
 \hline
 \textbf{Survey Questions} & \textbf{Range (1-3)} \\
 \hline
-Q1. Does the study describe clear criteria for the selection of the hardware and software components used in the AT? & (1: strongly disagree to 3: strongly agree) \\
+Q1. Does the study describe clear criteria for the selection of the hardware used in the state of art senerio? & (1: agree to 3: disagree) \\
 \hline
-Q2. Does the study show a method and experiments that allow validating the AT? & (1: strongly disagree to 3: strongly agree) \\
+Q2. Does the study show a method and experiments that allow validating the state of art performance ? & (1: agree to 3: disagree) \\
 \hline
-Q3. Does the study indicate the scope and limitations of the AT developed? & (1: strongly disagree to 3: strongly agree) \\
+Q3. Does the study mention the collaboration or other community related material of the FOSH? & (1: agree to 3: disagree) \\
 \hline
-Q4. Is the developed AT accessible, replicable, and reusable? & (1: strongly disagree to 3: strongly agree) \\
+Q4. Does the study indicate the scope and limitations of the FOSH developed? & (1: agree to 3: disagree) \\
 \hline
-Q5. Has the study been cited by other authors? & (1: Yes, 3: No) \\
+Q5. Is the developed hardware application accessible, replicable, and reusable? & (1: agree to 3: disagree) \\
+\hline
+Q6. Has the study been cited by other authors? & (1: Yes, 3: No) \\
 \hline
 \end{tabular}
 \end{table}
@@ -99,7 +101,11 @@ Q5. Has the study been cited by other authors? & (1: Yes, 3: No) \\
 
 To expand the selection of investigations included in the SLR, snowballing guidelines provided by Wohlin \cite{wohlin2014guidelines} were utilized to ensure that our study did not overlook any pertinent publications. Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. However, due to the relatively small number of significant publications found in other sources, we conducted only one iteration, resulting in the addition of n=10 publications from sources beyond the primary database, IEEE. Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardware (JOH), were incorporated into the search process.
 \subsubsection{Data Extraction and Analysis}
+During the data extraction and analysis phase, we employed a clustering technique to categorize the documents based on their textual content. Specifically, we applied the K-means clustering algorithm to group the articles according to the similarity of their titles and abstracts within the TF-IDF feature space, which is a numerical representation of the importance of words in the documents.
 
+To ascertain the optimal number of clusters (k), we examined the elbow method and silhouette scores, which offer insights into the ideal cluster count by taking into account the within-cluster sum of squares and the average silhouette width, respectively. After determining the optimal k value, we implemented the K-means clustering algorithm and allocated each document to its corresponding cluster.
+
+For a better interpretation of the results and a deeper understanding of the themes or topics within each cluster, we extracted the top keywords associated with each cluster. Furthermore, we generated word clouds to visually represent the most prominent keywords within each cluster, which facilitated the identification of prevalent themes and topics. This approach provided valuable insights into the connections between the articles and their potential relevance to the research objectives, while also offering an accessible and engaging means of conveying the information.
 \subsection{Scripts And API}
 
 \subsection{Limitations}

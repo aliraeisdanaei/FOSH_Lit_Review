@@ -81,6 +81,9 @@ E & 6 & Exclude papers deemed irrelevant to FOSH based on title, abstract, keywo
 \label{tab:criteria}
 \end{table}
 
+<<<<<<< HEAD
+In a distinct structure, the screening process for the $n=478$ records commenced with a review of the titles and abstracts. Studies that did not meet the inclusion criteria outlined in Table (3) and were not within the scope of the SLR were eliminated. Following this procedure, $n=100$ records from the IEEE explore database, as well as JOH and HardwareX journals, were excluded, leaving $n=378$ articles. The remaining articles were examined for eligibility, and those lacking a DOI, having access issues ($n=3$), or not being primary research (e.g., literature reviews and surveys) were removed ($n=3$). Subsequently, each remaining article was assessed based on a quality criterion employing a Likert scale survey, which ranged from 1 to 3, as shown in Table (2). These survey questions were designed with FOSH features and the SLR scope's relevance in mind. All questions carried equal weight, meaning that an article's overall score was determined by the average of these questions' scores. Ultimately, articles with a total average score above 12 were excluded, resulting in $n=242$ articles, as illustrated in Fig. (1).
+=======
 In a distinct structure, the screening process for the n=478 records commenced with a review of the titles and abstracts. 
 Studies that did not meet the inclusion criteria outlined in Table (3) and were not within the scope of the SLR were eliminated. 
 Following this procedure, n=100 records from the IEEE explore database, as well as JOH and HardwareX journals, were excluded, leaving n=378 articles. 
@@ -89,6 +92,7 @@ Subsequently, each remaining article was assessed based on a quality criterion e
 These survey questions were designed with FOSH features and the SLR scope's relevance in mind. 
 All questions carried equal weight, meaning that an article's overall score was determined by the average of these questions' scores. 
 Ultimately, articles with a total average score above 12 were excluded, resulting in n=242 articles, as illustrated in Fig. (1).
+>>>>>>> main
 
 \begin{table}[htbp]
 \centering
@@ -115,6 +119,11 @@ Q6. Has the study been cited by other authors? & (1: Yes, 3: No) \\
 
 \subsubsection{Snowballing}
 
+<<<<<<< HEAD
+To expand the selection of investigations included in the SLR, snowballing guidelines provided by Wohlin \cite{wohlin2014guidelines} were utilized to ensure that our study did not overlook any pertinent publications. Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. However, due to the relatively small number of significant publications found in other sources, we conducted only one iteration, resulting in the addition of $n=10$ publications from sources beyond the primary database, IEEE. Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardware (JOH), were incorporated into the search process.
+\subsubsection{Data Extraction and Analysis}
+Data extraction and analysis of the $n=242$ articles were conducted in accordance with our research questions (RQs) proposed in the systematic literature review. To address RQ1, we utilized a clustering technique to categorize the documents based on their textual content. Specifically, we applied the K-means clustering algorithm to group the articles according to the similarity of their titles and abstracts within the TF-IDF feature space, which is a numerical representation of the importance of words in the documents.
+=======
 To expand the selection of investigations included in the SLR, snowballing guidelines provided by Wohlin \cite{wohlin2014guidelines} were utilized to ensure that our study did not overlook any pertinent publications. 
 Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. 
 It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. 
@@ -124,6 +133,7 @@ Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardwa
 \subsubsection{Data Extraction and Analysis}
 During the data extraction and analysis phase, we employed a clustering technique to categorize the documents based on their textual content. 
 Specifically, we applied the K-means clustering algorithm to group the articles according to the similarity of their titles and abstracts within the TF-IDF feature space, which is a numerical representation of the importance of words in the documents.
+>>>>>>> main
 
 To ascertain the optimal number of clusters (k), we examined the elbow method and silhouette scores, which offer insights into the ideal cluster count by taking into account the within-cluster sum of squares and the average silhouette width, respectively. 
 After determining the optimal k value, we implemented the K-means clustering algorithm and allocated each document to its corresponding cluster.
@@ -134,6 +144,22 @@ This approach provided valuable insights into the connections between the articl
 
 \subsection{Scripts And API}
 
+<<<<<<< HEAD
+\subsection{Limitations}
+
+Despite the application of rigorous protocols for data collection and analysis throughout the systematic literature review, certain limitations were encountered. One of these limitations pertains to the selection of databases used in the search process. The chosen database was selected due to its extensive collection of FOSH-related studies and its ability to provide a substantial corpus of designs for analysis under the PRISMA guidelines. Nevertheless, future studies could benefit from including more comprehensive databases such as Scopus, Web of Science(WoS), ACM Guide to Computing Literature, and Google Scholar to further supplement and expand upon the findings of this research.
+
+Second limitation of this study arises from the selected timeframe (2017-2022). This period was chosen because it encompasses a substantial portion of the relevant designs and aligns with the state-of-the-art FOSH technologies, such as NVidia Jetson, Arduino, Raspberry Pi. However, it is important to acknowledge that some significant studies may fall outside of this timeframe or may have garnered citations after the search date, potentially impacting the comprehensiveness of the review.
+
+A third limitation pertains to the search strings. Standardized terms, such as "open-source hardware," were employed; however, this may have led to the exclusion of other terms or more specific terminology (e.g., collaboration hardware) that researchers use to describe their developments or target audiences in the SLR process.
+limitation can also stem from the exclusion of gray literature, such as white papers, preprints, or working papers, as well as documents not written in English. This constraint is inherent in the features and procedures of an SLR, limiting the range of document sources that researchers can analyze and potentially affecting the comprehensiveness of the findings.
+
+A fourth limitation arises from the time constraints associated with this project. Although our initial plan was to search all available databases for FOSH, our results primarily came from the IEEE database. We conjecture that platforms such as GitHub repositories may also host state-of-the-art open-source hardware projects, but due to time restrictions, we were unable to include them in our search. This limitation may impact the comprehensiveness and generalizability of our findings.
+
+A fifth limitation pertains to the data analysis phase. Although we employed a clustering technique, more advanced professional tools could have been utilized for a comprehensive bibliometric analysis. Examples of such tools include, VOSViewer \cite{van2013vosviewer}, and Crossref REST API \cite{lammey2016using}, which are designed for network data analysis, focusing on items and clusters while providing overall functions to create and visualize maps. Some text analytics tool like Leximancer \cite{sotiriadou2014choosing} that can analyze the contents of document collections and visualize their trends in concept maps. The use of these advanced tools might have yielded additional insights and a more in-depth understanding of the relationships and patterns within the data.
+
+Additionally, the use of the K-means clustering algorithm in our data analysis phase has its inherent limitations. K-means clustering assumes that the clusters are spherical and equally sized, which might not always be the case for real-world datasets. Moreover, it is sensitive to the initial placement of cluster centroids and may converge to a local optimum. While we made efforts to determine the optimal number of clusters using methods like the elbow method and silhouette scores, alternative clustering algorithms, such as hierarchical clustering or DBSCAN, could potentially provide different perspectives on the structure of the data.
+=======
 The 
 \href{https://www.oshwa.org/}{Open Source Hardware Association} 
 tracks all FOSH projects. 
@@ -150,3 +176,4 @@ Additionally, the API was used to collect the websites, and platforms used to st
 % \subsection{Limitations}
 
 \end{document}
+>>>>>>> main

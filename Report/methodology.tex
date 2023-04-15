@@ -115,15 +115,21 @@ Q6. Has the study been cited by other authors? & (1: Yes, 3: No) \\
 \subsubsection{Snowballing}
 
 To expand the selection of investigations included in the SLR, snowballing guidelines provided by Wohlin \cite{wohlin2014guidelines} were utilized to ensure that our study did not overlook any pertinent publications. 
-Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. 
-However, due to the relatively small number of significant publications found in other sources, we conducted only one iteration, resulting in the addition of n=10 publications from sources beyond the primary database, IEEE. Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardware (JOH), were incorporated into the search process.
+Upon filtering the initial sample set of publications, the snowballing method expanded the collection by examining their references as well. 
+It is important to note that formal snowballing is an iterative process: during each cycle, new publications are identified, and their references are analyzed in subsequent iterations. 
+However, due to the relatively small number of significant publications found in other sources, we conducted only one iteration, resulting in the addition of n=10 publications from sources beyond the primary database, IEEE. 
+Notably, specialized OSHW journals, such as HardwareX and Journal of Open Hardware (JOH), were incorporated into the search process.
 
 \subsubsection{Data Extraction and Analysis}
-During the data extraction and analysis phase, we employed a clustering technique to categorize the documents based on their textual content. Specifically, we applied the K-means clustering algorithm to group the articles according to the similarity of their titles and abstracts within the TF-IDF feature space, which is a numerical representation of the importance of words in the documents.
+During the data extraction and analysis phase, we employed a clustering technique to categorize the documents based on their textual content. 
+Specifically, we applied the K-means clustering algorithm to group the articles according to the similarity of their titles and abstracts within the TF-IDF feature space, which is a numerical representation of the importance of words in the documents.
 
-To ascertain the optimal number of clusters (k), we examined the elbow method and silhouette scores, which offer insights into the ideal cluster count by taking into account the within-cluster sum of squares and the average silhouette width, respectively. After determining the optimal k value, we implemented the K-means clustering algorithm and allocated each document to its corresponding cluster.
+To ascertain the optimal number of clusters (k), we examined the elbow method and silhouette scores, which offer insights into the ideal cluster count by taking into account the within-cluster sum of squares and the average silhouette width, respectively. 
+After determining the optimal k value, we implemented the K-means clustering algorithm and allocated each document to its corresponding cluster.
 
-For a better interpretation of the results and a deeper understanding of the themes or topics within each cluster, we extracted the top keywords associated with each cluster. Furthermore, we generated word clouds to visually represent the most prominent keywords within each cluster, which facilitated the identification of prevalent themes and topics. This approach provided valuable insights into the connections between the articles and their potential relevance to the research objectives, while also offering an accessible and engaging means of conveying the information.
+For a better interpretation of the results and a deeper understanding of the themes or topics within each cluster, we extracted the top keywords associated with each cluster. 
+Furthermore, we generated word clouds to visually represent the most prominent keywords within each cluster, which facilitated the identification of prevalent themes and topics. 
+This approach provided valuable insights into the connections between the articles and their potential relevance to the research objectives, while also offering an accessible and engaging means of conveying the information.
 \subsection{Scripts And API}
 
 \subsection{Limitations}

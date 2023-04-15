@@ -48,7 +48,7 @@ Based on the result of the systematic literature review, we can divide the persp
 \begin{figure}[!h]
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/num_paper_vs_year.png}
+        \includegraphics[width=\textwidth]{../Images/num_paper_vs_year.png}
         \caption{Number of papers published in each categories every year}
         \label{fig:1}
     \end{minipage}
@@ -99,6 +99,10 @@ The aspect of FOSH communities will be further discussed later.
 
 \subsection{Licences}
 There are three pieces of an FOSH that has a licence, the hardware, the software, and the documentation.
+The licences can be seen in the tables \ref{tab:hlic}, \ref{tab:slic}, and \ref{tab:dlic}.
+The hardware are predominately packaged with a CERN or a derivative of this licence.
+The CERN licence also appears in the software and documentation, but it is not the main type. 
+Software is packaged with the common MIT licence and the documentation has a common public licence.
 
 \begin{table*}[h!]
         \centering
@@ -133,6 +137,68 @@ There are three pieces of an FOSH that has a licence, the hardware, the software
         \label{tab:hlic}
 \end{table*}
 
+\begin{table*}[h!]
+        \centering
+        \begin{tabular}{| l | l |}
+        \toprule
+            Licence & Number \\
+        \midrule
+        \midrule
+            No software & 394 \\
+        \midrule
+            MIT & 1101 \\
+        \midrule
+            GPL & 270 \\
+            GPL-3.0-or-later & 32 \\
+            GPL-3.0-only & 13 \\
+            LGPL & 34 \\
+        \midrule
+            CC-BY-SA-4.0 & 8 \\
+            CC-BY-4.0 & 4 \\
+            CC0-1.0 &  \\
+            CC-BY-SA-4.0 & 8 \\
+        \midrule
+            CERN-OHL-P-2.0 & 1 \\
+            CERN-OHL-W-2.0 & 3 \\
+            CERN-OHL-S-2.0 & 13 \\
+        \midrule
+            Other & 152 \\
+            Apache & 34 \\
+            None & 1 \\
+            Mozilla & 1 \\
+        \bottomrule
+        \end{tabular}
+        \caption{Software Licences}
+        \label{tab:slic}
+\end{table*}
 
+\begin{table*}[h!]
+        \centering
+        \begin{tabular}{| l | l |}
+        \toprule
+                Licence & Number \\
+        \midrule
+        \midrule
+            CC BY-SA & 1541 \\
+            CC-BY-4.0 & 36 \\
+            CC BY & 125 \\
+            CC-BY-SA-4.0 & 51 \\
+            CC 0 & 19 \\
+            CC0-1.0 & 6 \\
+        \midrule
+            GPL & 7 \\
+            GPL-3.0-or-later & 11 \\
+            GPL-3.0-only & 3 \\
+        \midrule
+            CERN-OHL-P-2.0 & 5 \\
+            CERN-OHL-S-2.0 & 24 \\
+            CERN-OHL-W-2.0 & 6 \\
+            Other & 227 \\
+            None &  \\
+        \bottomrule
+        \end{tabular}
+        \caption{Documentation Licences}
+        \label{tab:dlic}
+\end{table*}
 
 \end{document}

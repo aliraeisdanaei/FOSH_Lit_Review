@@ -98,16 +98,34 @@ The comprehensive results of our study can be accessed via the subsequent public
 FOSH is a new way of designing and building hardware that's become popular in many areas since it is open for innovation and can be democratically beneficial to the community. Based on the result of the systematic literature review, we can divide the perspective of FOSH in the following categories. electronics and computing, robotics and automation, and education and research.
 \subsection{education and research}
 
-# aspect of education: electronic[4], auto vehicle design, industrial design, computer science, digital media design[3], K-12 student[92], control engineering education[98], robot[94], STEM education[]
-#kind of tool used: RISC-V based[18], Arduino[75],open-source openAirInterface Testbed project[62], Pantograph,3D printer, Hapkit[92], open-source robot platform(OSR)[94]
-#learning purpose, course: learning microprocessor, hardware based simulator[4], intergrate computer lab[18], microcontroller lab class[75], mobile communication network[62], robotic design[94], embedded system[]
-#newly invented devices for student to use: open-source power electronics didactic platform[61], open-source "ball-on-beam didactic device", attached to Arduino microcontroller [98], open-source robotic manipulation platform[148], development the front-end for the FPGA based platform[]
-#low-cost part: [3],[98], [148]
+% aspect of education: electronic[4], industrial design, computer science, digital media design[3], K-12 student[92], control engineering education[98], robot[94], autonomous car(robot)[232]
+
+%kind of tool used: RISC-V based[18], Arduino[75],open-source openAirInterface Testbed project[62], Pantograph,3D printer, Hapkit[92], open-source robot platform(OSR)[94], GNURadio-Based Toolkit[300]
+
+%learning purpose, course: learning microprocessor, hardware based simulator[4], intergrate computer lab[18], microcontroller lab class[75], mobile communication network[62], robotic design[94], embedded system[211], optical wireless communication[300], chip design[304]
+
+%newly invented devices for student to use: open-source power electronics didactic platform[61], open-source "ball-on-beam didactic device", attached to Arduino microcontroller [98], open-source robotic manipulation platform[148], development the front-end for the FPGA based platform[211]
+
+The proliferation of open-source hardware has led to its increasing adoption in educational institutions, ranging from K-12 to graduate programs.[92] This trend can be attributed to the wide applicability of open-source hardware in diverse fields such as electronics[4], computer science, digital media design[3], robotics,[94] and automated vehicles[232]. Taking open-source hardware into courses can provide students with a more comprehensive understanding of the relevant concepts and facilitate hands-on learning experiences.[3]
+
+Arduino, and Arduino-based platforms, are the most prevalent open-source hardware utilized in schools. These tools enable the design of laboratory exercises that target the acquisition of knowledge and skills related to microcontrollers[75], microprocessors[4], embedded systems[211], mobile communication networks[62], optical wireless communications[300], and chip design[304]. The versatility and accessibility of open-source hardware make them ideal for fostering a deeper understanding of the basic principles.
+
+What's more, the appearance of new open-source hardware platforms such as the power electronics didactic platform[61], the "ball-on-beam didactic device"[98], the robotic manipulation platform[148], and the development of the front-end for the FPGA-based platform[211] has further facilitated the teaching and learning of the hardware. In addition to the cost-saving benefits, these open-source hardware tools aim to inspire students to contribute to the existing open-source hardware ecosystem. As highlighted by A. J. Miller; N. D. Riaziat; J. D. Brown, the high cost of scientific tools will impede the pace of technological progress. Thus, the incorporation of open-source hardware in education can have benefits both in reducing cost and activating the development of the hardware.[75]
 
 
-\subsection{electronics and computing}
-Some of the most popular and successful hardware are open sourced, such as Risc-V and Arduino. These are free for modification, which is also commonly introduced and extended too various new products. For example, Mlakić1 et al. proposed a measurement device implemented based on Arduino. 
-% TODO: REF 
+\subsection{electronics and healthcare}
+Some of the most popular and successful hardware are open sourced, such as Risc-V and Arduino. These are free for modification, which is also commonly introduced and extended too various new products. For example, Mlakić1 et al. proposed a measurement device implemented based on Arduino. This can be further used to making own IED capable for IoT and smart grid symbiosis. 
+% TODO: REF FOR Mlakić1
+Arduino can also be combined with various products to realize human-computer interaction. One example would be Yuning Fan's programming language-based interactive device, which is an interface designed not only for the potential benefit technologically, but also educate children at the same time. As mentioned in the previous paragraph, education is a major field that FOSH is contributing to an strongly impacted in today's community.  
+% TODO: REF FOR  Yuning Fan
+One major reason for any implementation of electronic or computing products is to reduce the cost of the current solution. Noted the vital and complex role of medical realm, some researches  focus on different fields of this branch. For example, the ultrasound test bench demonstrated by Pashaei et al. that can further extended to other devices. The key sellout of this product is that it's always in demand of medical equipment, where making the design open-sourced would greatly benefit the whole medical community. 
+% TODO: REF for Pashaei
+In addition, given the limitation of availability of affordable medical equipment to treat chronic condition, Dorin et al. explores the Loop Open-source Artificial Pancreas (APS).
+% TODO: REF FOR Dorin
+There are similar designs add convenience for health related measurement device such as OpenSenseRT which is also low cost and extendable,
+% TODO: REF for OpenSenseRT
+and the robotic platform to enable dexterous procedures within CT scanners which is practically a robot hand that allows physicians to localize tumours quickly. Robots are another major application area in the FOSH community, which will be further explore in the next paragraph. 
+
 
 
 \subsection{robotics and automation}
